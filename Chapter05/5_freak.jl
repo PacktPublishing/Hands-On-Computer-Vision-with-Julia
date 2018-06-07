@@ -25,3 +25,5 @@ grid = Gray.(hcat(img1, img3))
 offset = CartesianIndex(0, size(img1, 2))
 map(m -> draw!(grid, LineSegment(m[1], m[2] + offset)), matches)
 grid
+
+imshow(grid)

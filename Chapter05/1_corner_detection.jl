@@ -90,5 +90,42 @@ new_img = vcat(
         img_fast)
 )
 
-new_img[Int(size(new_img, 1) / 2), :] = colorant"yellow"
-new_img[:, Int(size(new_img, 2) / 2)] = colorant"yellow"
+imshow(new_img)
+
+### Example 5
+
+img = Gray.(restrict(load("sample-images/cat-3417184_640.jpg")))
+img_f = Float16.(Gray.(img))
+
+img_harris = copy(img)
+img_harris[dilate(imcorner(img_f, Percentile(95), method=harris)) .> 0.01] = colorant"yellow"
+
+img_shi = copy(img)
+img_shi[dilate(imcorner(img_f, Percentile(95), method=shi_tomasi)) .> 0.01] = colorant"yellow"
+
+img_rosenfield = copy(img)
+img_rosenfield[dilate(imcorner(img_f, Percentile(95), method=kitchen_rosenfeld)) .> 0.01] = colorant"yellow"
+
+img_fast = copy(img)
+img_fast[dilate(fastcorners(img_f, 12, 0.05)) .> 0.01] = colorant"yellow"
+
+new_img = vcat(
+    hcat(
+        img_harris,
+        img_shi),
+    hcat(
+        img_rosenfield,
+        img_fast)
+)
+
+### Performance comparison
+
+img = restrict(load("sample-images/cat-3417184_640.jpg"))
+img_f = Float16.(Gray.(img))
+
+@btime fastcorners(img_f, 12, 0.15);
+@btime fastcorners(img_f, 12, 0.05);
+@btime imcorner(img_f, method=harris);
+@btime imcorner(img_f, Percentile(95), method=harris);
+@btime imcorner(img_f, method=shi_tomasi);
+@btime imcorner(img_f, method=kitchen_rosenfeld);

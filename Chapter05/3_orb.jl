@@ -20,5 +20,4 @@ offset = CartesianIndex(0, size(img1, 2))
 map(m -> draw!(grid, LineSegment(m[1], m[2] + offset)), matches)
 grid
 
-
-img3 = Gray.(load("cat-3418815_640.jpg"))
+imshow(grid)
