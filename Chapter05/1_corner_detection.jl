@@ -118,6 +118,8 @@ new_img = vcat(
         img_fast)
 )
 
+imshow(new_img)
+
 ### Performance comparison
 
 img = restrict(load("sample-images/cat-3417184_640.jpg"))

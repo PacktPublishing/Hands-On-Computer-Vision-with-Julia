@@ -44,7 +44,7 @@ matches = match_keypoints(ret_features_1, ret_features_2, desc_1, desc_2, 0.15)
 grid = hcat(img_left, img_right)
 offset = CartesianIndex(0, size(img_left_gray, 2))
 map(m -> draw!(grid, LineSegment(m[1], m[2] + offset)), matches)
-grid
+imshow(grid)
 
 
 offset_x = median(map(m -> (img_left_width - m[1][2]) + m[2][2], matches))

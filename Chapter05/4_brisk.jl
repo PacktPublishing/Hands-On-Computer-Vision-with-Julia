@@ -24,6 +24,5 @@ img3[1:size(img2, 1), 1:size(img2, 2)] = img2
 grid = hcat(img1, img3)
 offset = CartesianIndex(0, size(img1, 2))
 map(m -> draw!(grid, LineSegment(m[1], m[2] + offset)), matches)
-grid
 
 imshow(grid)

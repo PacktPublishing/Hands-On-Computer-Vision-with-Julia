@@ -58,7 +58,7 @@ void detect_objects(Mat img, Net net) {
 
             Rect bounding_box((int)xLeftBottom, (int)yLeftBottom, (int)(xRightTop - xLeftBottom), (int)(yRightTop - yLeftBottom));
             rectangle(img, bounding_box, Scalar(0, 255, 0), 2);
-            putText(img, label, Point(xLeftBottom, yLeftBottom), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0,0,0));
+            putText(img, label, Point(xLeftBottom, yLeftBottom - 10), FONT_HERSHEY_SIMPLEX, 0.85, Scalar(255,255,255));
         }
     }
 }

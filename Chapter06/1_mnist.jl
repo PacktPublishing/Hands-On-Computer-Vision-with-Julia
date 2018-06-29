@@ -78,3 +78,4 @@ for i = 1:10
 end
 
 map(x -> findmax(results[:, x])[2] - 1, 1:10)
+imshow(preview_img)

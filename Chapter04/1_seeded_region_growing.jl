@@ -22,15 +22,10 @@ seeds = [
     (CartesianIndex(130,200), 2), 
     (CartesianIndex(130,300), 2), 
     (CartesianIndex(130,420), 3), 
-    #(CartesianIndex(150,350), 3), 
     (CartesianIndex(30,50), 4)
 ]
 
 segments = seeded_region_growing(img, seeds)
-
-imshow(map(i->segment_mean(segments,i), labels_map(segments)))
-
-
 
 imshow(map(i->segment_mean(segments,i), labels_map(segments)))
 

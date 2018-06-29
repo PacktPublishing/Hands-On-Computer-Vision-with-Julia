@@ -16,5 +16,3 @@ combined_image = fill(RGB4{Float16}(0.,0.,0.), size(img) .* (1, 2))
 combined_image[:, 1:img_width] = img
 combined_image[:, img_width+1:img_width*2] = img_binary
 imshow(combined_image)
-
-save("combined_image.jpg", combined_image)

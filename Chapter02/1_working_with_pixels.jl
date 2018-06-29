@@ -5,7 +5,7 @@ img_channel_view = channelview(img);
 img_channel_view = permuteddimsview(img_channel_view, (2, 3, 1));
 # img_channel_view[:, :, 2] *= 0.9;
 img_channel_view[img_channel_view .> 0.7] *= 0.9 
-img
+imshow(img)
 
 img_channel_view_1d = view(img_channel_view, 1, :, :)
 img_channel_view_1d = img_channel_view_1d * 2
@@ -13,14 +13,14 @@ img_channel_view_1d = img_channel_view_1d * 2
 img_float = Float16.(img_channel_view)
 img_float[2, :, :] *= 0.9
 colorview(RGB, img_float)
-img
+imshow(img)
 
 img_adjusted = copy(img)
 img_adjusted_channel_view = channelview(img_adjusted)
 img_adjusted *= 2
 
 img_channel_view[img_channel_view[:, :, :] .> 0.75N0f8] = img_channel_view[img_channel_view[:, :, :] .> 0.75N0f8] .+ 1N0f8
-img
+imshow(img)
 
 img = load("sample-images/cats-3061372_640.jpg");
 img_channel_view = channelview(img);
@@ -32,7 +32,7 @@ img_channel_view[:, x_coords, 1] = min.(img_channel_view[:, x_coords, 1] .* 1.1,
 img_channel_view[:, x_coords, 2] = min.(img_channel_view[:, x_coords, 2] .* 1.2, 1);
 img_channel_view[:, x_coords, 3] = min.(img_channel_view[:, x_coords, 3] .* 1.4, 1);
 # img_channel_view[img_channel_view .> 0.7] *= 0.9 
-img
+imshow(img)
 
 
 img = load("sample-images/cats-3061372_640.jpg");
@@ -41,11 +41,10 @@ img_area_range = 320:640
 img_area = img[:, img_area_range]
 img_area = imfilter(img_area, Kernel.gaussian(5))
 img[:, img_area_range] = img_area
-img
+imshow(img)
 
 
-
-img2 = load("sample-images/cats-3061372_640.jpg");
+img = load("sample-images/cats-3061372_640.jpg");
 
 height_range = 1:size(img, 1)
 width_range = 1:size(img, 2)
@@ -57,7 +56,7 @@ end
 
 img = imfilter(img, Kernel.gaussian(3))
 img[:, img_area_range] = img_area
-img
+imshow(img)
 
 
 border_size = 50
@@ -72,25 +71,21 @@ img[img_area_top, :] = imfilter(img[img_area_top, :], Kernel.gaussian(blur_dista
 
 img_area_bottom = size(img, 1)-border_size:size(img, 1)
 img[img_area_bottom, :] = imfilter(img[img_area_bottom, :], Kernel.gaussian(blur_distance))
-
-img
+imshow(img)
 
 img_large = fill(RGB4{N0f8}(0.,0.,0.), 640, 640)
 img_large[141:500, :] = img
 img_large[1:140, :] = imfilter(img[1:140, :], Kernel.gaussian(10))
-img_large
+imshow(img_large)
 
 
 colorview(RGB, Float16.(channelview(img)))
-
 img = padarray(img, Pad(:replicate, 0, 50))
-
 img_area_range = 1:50
-
 img_area = img[:, img_area_range]
 img_area = imfilter(img_area, Kernel.gaussian(5))
 img[:, img_area_range] = img_area
-img
+imshow(img)
 
 # // sharpen image using "unsharp mask" algorithm
 # Mat blurred; double sigma = 1, threshold = 5, amount = 1;
@@ -117,7 +112,7 @@ sharpened = min.(sharpened, 1);
 
 img[:, 1:321] = img[:, 320:640];
 img[:, 320:640] = colorview(RGB, sharpened)[:, 320:640];
-img
+imshow(img)
 
 
 
@@ -174,4 +169,4 @@ end
 
 # apply mask to original and grayscale images
 img_masked = img_arr .* img_mask .+ img_grayscale_arr .* (~img_mask);
-colorview(RGB, permutedims(img_masked, (3, 1, 2)))
+imshow(colorview(RGB, permutedims(img_masked, (3, 1, 2))))

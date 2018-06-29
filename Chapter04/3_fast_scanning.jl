@@ -61,5 +61,3 @@ segments_n = prune_segments(segments_2, deletion_rule, replacement_rule)
 # preview the result
 
 imshow(new_img)
-save("bird-felzenszwalb-123.jpg", restrict(new_img))
-save("bird-fast-scanning-123-pruned.jpg", restrict(segment_to_image(segments_n)))
