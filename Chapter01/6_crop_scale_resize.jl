@@ -34,7 +34,7 @@ new_width = 200
 scale_percentage = new_width / size(source_image)[2]
 new_size = trunc.(Int, size(source_image) .* scale_percentage)
 scaled_image = imresize(source_image, new_size)
-imshow(resized_image);
+imshow(scaled_image);
 
 # scale/ resize image by two-fold
 source_image = load("sample-images/cats-3061372_640.jpg");
