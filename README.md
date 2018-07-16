@@ -47,9 +47,10 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ### Related products
 
+*  Julia High Performance [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781788998796)
+
 * Julia for Data Science [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/julia-data-science?utm_source=github&utm_medium=repository&utm_campaign=9781785289699 )
 
-*  Julia High Performance [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781788998796)
 
 
 ## Get to Know the Author
