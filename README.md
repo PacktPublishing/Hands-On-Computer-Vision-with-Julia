@@ -46,37 +46,13 @@ With the following software and hardware list you can run all code files present
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/HandsOnComputerVisionwithJulia_ColorImages.pdf).
 
 ### Related products
-*  [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-785-88091-8)
 
-* Julia for Data Science [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/julia-data-science?utm_source=github&utm_medium=repository&utm_campaign=9781785289699 ) [[Amazon]](https://www.amazon.com/dp/1-785-28969-1)
+* Julia for Data Science [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/julia-data-science?utm_source=github&utm_medium=repository&utm_campaign=9781785289699 )
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
+*  Julia High Performance [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781788998796)
 
 
 ## Get to Know the Author
 **Dmitrijs Cudihins**
 Dmitrijs Cudihins is a skilled data scientist, machine learning engineer, and software developer with more than eight years' commercial experience. His started off as a web developer, but later switched to data science and computer vision. He has been a senior data scientist for the last three years, providing consultancy services for a state-owned enterprise. There, he uses Julia to automate communication with citizens, applying different CV techniques and scanned image processing.
-
-****
-0
-
-****
-0
-
-****
-0
-
-****
-0
-
-## Other books by the authors
-[]()
-
-[]()
-
-[]()
-
-[]()
-
-[]()
 
