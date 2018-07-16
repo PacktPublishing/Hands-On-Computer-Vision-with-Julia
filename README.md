@@ -34,11 +34,11 @@ end
 **Following is what you need for this book:**
 Hands-On Computer Vision with Julia is for Julia developers who are interested in learning how to perform image processing and want to explore the field of computer vision. Basic knowledge of Julia will help you understand the concepts more effectively.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-8).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-9).
 ### Software and Hardware List
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
-| 1-8      | Julia 0.6.3                     | Windows 7+,macOS 10.8+,Linux 2.6.18+,Ubuntu Linux 16.04 |
+| 1-9      | Julia 0.6.3                     | Windows 7+,macOS 10.8+,Linux 2.6.18+,Ubuntu Linux 16.04 |
 | 7       | MXNet 1.2.0            | Windows 7+,macOS 10.8+,Linux 2.6.18+,Ubuntu Linux 16.04) |
 | 8        | Open CV 3.2.0            | macOS 10.8+,Linux 2.6.18++ GUI,UbuntuLinux 16.04+(desktop version) |
 
