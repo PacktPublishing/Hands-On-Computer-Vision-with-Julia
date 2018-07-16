@@ -34,7 +34,7 @@ end
 **Following is what you need for this book:**
 Hands-On Computer Vision with Julia is for Julia developers who are interested in learning how to perform image processing and want to explore the field of computer vision. Basic knowledge of Julia will help you understand the concepts more effectively.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-8).
 ### Software and Hardware List
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
