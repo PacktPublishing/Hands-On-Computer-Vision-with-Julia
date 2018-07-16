@@ -5,7 +5,7 @@ img_channel_view = channelview(img);
 img_channel_view = permuteddimsview(img_channel_view, (2, 3, 1));
 # img_channel_view[:, :, 2] *= 0.9;
 img_channel_view[img_channel_view .> 0.7] *= 0.9 
-imshow(img)
+imshow(img_channel_view)
 
 img_channel_view_1d = view(img_channel_view, 1, :, :)
 img_channel_view_1d = img_channel_view_1d * 2
