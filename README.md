@@ -2,7 +2,7 @@
 
 <a href="https://www.packtpub.com/application-development/hands-computer-vision-julia?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
 
-This is the code repository for [](https://www.packtpub.com/application-development/hands-computer-vision-julia?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
+This is the code repository for Hands-On-Computer-Vision-with-Julia, published by Packt.
 
 ****
 
