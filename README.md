@@ -7,7 +7,6 @@ This is the code repository for [](https://www.packtpub.com/application-developm
 ****
 
 ## What is this book about?
-0
 
 This book covers the following exciting features:
 
@@ -53,7 +52,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 *  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
 **Dmitrijs Cudihins**
