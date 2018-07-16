@@ -40,7 +40,7 @@ With the following software and hardware list you can run all code files present
 | -------- | ------------------------------------| -----------------------------------|
 | 1-8      | Julia 0.6.3                     | Windows 7+,macOS 10.8+,Linux 2.6.18+,Ubuntu Linux 16.04 |
 | 7       | MXNet 1.2.0            | Windows 7+,macOS 10.8+,Linux 2.6.18+,Ubuntu Linux 16.04) |
-| 8        | Open CV 3.2.0            | macOS 10.8+,Linux 2.6.18++ GUI,UbuntuLinux 16.04+(desktopversion) |
+| 8        | Open CV 3.2.0            | macOS 10.8+,Linux 2.6.18++ GUI,UbuntuLinux 16.04+(desktop version) |
 
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/HandsOnComputerVisionwithJulia_ColorImages.pdf).
@@ -54,5 +54,5 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ## Get to Know the Author
 **Dmitrijs Cudihins**
-Dmitrijs Cudihins is a skilled data scientist, machine learning engineer, and software developer with more than eight years' commercial experience. His started off as a web developer, but later switched to data science and computer vision. He has been a senior data scientist for the last three years, providing consultancy services for a state-owned enterprise. There, he uses Julia to automate communication with citizens, applying different CV techniques and scanned image processing.
+is a skilled data scientist, machine learning engineer, and software developer with more than eight years' commercial experience. His started off as a web developer, but later switched to data science and computer vision. He has been a senior data scientist for the last three years, providing consultancy services for a state-owned enterprise. There, he uses Julia to automate communication with citizens, applying different CV techniques and scanned image processing.
 
