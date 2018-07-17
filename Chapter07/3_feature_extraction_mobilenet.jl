@@ -4,7 +4,7 @@ using Images, MXNet
 const MODEL_NAME = "weights/mobilenet-v2/mobilenet_v2"
 const MODEL_CLASS_NAMES = "weights/mobilenet-v2/synset.txt"
 
-nnet = mx.load_checkpoint(MODEL_NAME, 0, mx.FeedForward; context = mx.gpu());
+nnet = mx.load_checkpoint(MODEL_NAME, 0, mx.FeedForward; context = mx.cpu());
 synset = readlines(MODEL_CLASS_NAMES);
 
 ### SEARCH FOR A LAYER OF INTERESTS

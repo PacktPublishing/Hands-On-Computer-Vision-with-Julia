@@ -24,8 +24,7 @@ mx_data[1:1] = img;
 data_provider = mx.ArrayDataProvider(:data => mx_data);
 
 ### PREDICTING
-
-@time pred = mx.predict(nnet, data_provider)
+@time pred = mx.predict(nnet, data_provider);
 mxval, mxindx = findmax(pred[:, 1]);
-println(mxval, " ", mxindx, " ", synset[mxindx])
+println(mxval, " ", mxindx, " ", synset[mxindx]);
 
