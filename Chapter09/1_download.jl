@@ -11,7 +11,7 @@ for dataset_name in DATASETS
     if ~isdir(current_folder) mkdir(current_folder) end
 
     file_name = joinpath(pwd(), "book30-listing-$dataset_name.csv")
-    f = open(file_name); lines = readlines(f); close(f);
+    lines = readlines(file_name);
     
     for line in lines
         line_split = split(line, "\",\"")

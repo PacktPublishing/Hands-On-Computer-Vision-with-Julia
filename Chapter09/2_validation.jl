@@ -26,4 +26,5 @@ for dataset_name in DATASETS
     end
 end
 
+imshow(preview_img)
 println(original_shapes)

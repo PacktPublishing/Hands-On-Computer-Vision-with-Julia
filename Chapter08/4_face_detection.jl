@@ -4,6 +4,8 @@ using OpenCV
 using Images, ImageView
 using Cxx
 
+import ImageView
+
 # C++ OpenCV code
 cxx"""
 
@@ -87,7 +89,7 @@ img_opencv = imread(filename);
 img_images = load(filename);
 
 coords_cxx = @cxx detect_face_coords(img_opencv, face_cascade);
-coords = map(x -> Int(at(coords, x)), 0:3);
+coords = map(x -> Int(at(coords_cxx, x)), 0:3);
 
 face = img_images[coords[3]:coords[3] + coords[4], coords[1]:coords[1] + coords[2]]
-
+ImageView.imshow(face)

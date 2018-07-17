@@ -1,7 +1,7 @@
 ENV["PKG_CONFIG_PATH"] = "/Users/dc/anaconda/envs/python35/lib/pkgconfig"
 
 using OpenCV
-using Images
+using Images, ImageView
 using Cxx
 
 function opencv_to_image(img_opencv)
@@ -24,3 +24,4 @@ img_opencv = imread(filename);
 
 # convert to Julia images
 img_images = opencv_to_image(img_opencv);
+imshow(img_images)

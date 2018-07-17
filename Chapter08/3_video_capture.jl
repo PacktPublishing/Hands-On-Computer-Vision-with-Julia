@@ -1,8 +1,10 @@
 ENV["PKG_CONFIG_PATH"] = "/Users/dc/anaconda/envs/python35/lib/pkgconfig"
 
 using OpenCV
-using Images, ImageView
+using Images
 using Cxx
+
+import ImageView
 
 function opencv_to_image(img_opencv)
 
@@ -69,9 +71,9 @@ video_device = @cxx get_video_device(CAP_ANY);
 
 @time current_frame = @cxx capture_frame(video_device);
 @time current_frame_image = opencv_to_image(current_frame);
-Images.imshow(colorview(RGB, current_frame_image))
+ImageView.imshow(colorview(RGB, current_frame_image))
 
 filename = joinpath(pwd(), "camera-frame.jpg");
 @time @cxx capture_save_frame(video_device, pointer(filename));
 @time current_frame_image_2 = load(filename);
-imshow(current_frame_image_2)
+ImageView.imshow(current_frame_image_2)
