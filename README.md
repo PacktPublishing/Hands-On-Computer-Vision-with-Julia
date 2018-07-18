@@ -39,7 +39,7 @@ With the following software and hardware list you can run all code files present
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
 | 1-9      | Julia 0.6.3                     | Windows 7+, macOS 10.8+, Linux 2.6.18+, Ubuntu Linux 16.04 |
-| 7       | MXNet 1.2.0            | Windows 7+, macOS 10.8+, Linux 2.6.18+, Ubuntu Linux 16.04) |
+| 7       | MXNet 1.2.0            | Windows 7+, macOS 10.8+, Linux 2.6.18+, Ubuntu Linux 16.04 |
 | 8        | Open CV 3.2.0            | macOS 10.8+, Linux 2.6.18++ GUI, Ubuntu Linux 16.04+ (desktop version) |
 
 
