@@ -1,9 +1,9 @@
-# 
+# Hands-On Computer Vision with Julia
 
-<a href="https://www.packtpub.com/application-development/hands-computer-vision-julia?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
 
-This is the code repository for Hands-On-Computer-Vision-with-Julia, published by Packt.
+<a href="https://www.packtpub.com/application-development/hands-computer-vision-julia"><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/10308_cover.png" alt="Hands-On Computer Vision with Julia" height="256px" align="right"></a>
 
+This is the code repository for Hands-On Computer Vision with Julia](<a href="https://www.packtpub.com/application-development/hands-on-computer-vision-with-julia?utm_source=github&utm_medium=repository&utm_campaign=9781789136159 "), published by Packt.
 ****
 
 ## What is this book about?
