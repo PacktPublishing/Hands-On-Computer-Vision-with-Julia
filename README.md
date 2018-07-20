@@ -54,9 +54,9 @@ With the following software and hardware list you can run all code files present
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/HandsOnComputerVisionwithJulia_ColorImages.pdf).
 
 ### Related products <Paste books from the Other books you may enjoy section>
-* Julia High Performance [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781785880919) [[Amazon]](https://www.amazon.com/dp/9781785880919)
+* Julia High Performance [[Packt]](https://www.packtpub.com/application-development/julia-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781785880919) [[Amazon]](https://www.amazon.com/dp/1785880918)
 
-* Julia for Data Science [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/julia-data-science?utm_source=github&utm_medium=repository&utm_campaign=9781785289699) [[Amazon]](https://www.amazon.com/dp/9781785289699)
+* Julia for Data Science [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/julia-data-science?utm_source=github&utm_medium=repository&utm_campaign=9781785289699) [[Amazon]](https://www.amazon.com/dp/1785289691)
 
 ## Get to Know the Author
 **Dmitrijs Cudihins**
