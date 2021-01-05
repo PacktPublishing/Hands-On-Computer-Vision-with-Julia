@@ -6,7 +6,7 @@ img2 = Gray.(load("cat-3417184_640_watermarked.jpg"))
 # rotation img2 around the center
 rot = recenter(RotMatrix(5pi/6), [size(img2)...] .÷ 2)  # a rotation around the center
 tform = rot ∘ Translation(-50, -40)
-img2 = warp(img2, tform, indices(img2))
+img2 = warp(img2, tform, size(img2))
 
 orb_params = ORB(num_keypoints = 1000)
 
