@@ -6,7 +6,7 @@ img2 = Gray.(load("cat-3417184_640_watermarked.jpg"))
 # rotate img2 around the center and resize it
 rot = recenter(RotMatrix(5pi/6), [size(img2)...] .÷ 2)  # a rotation around the center
 tform = rot ∘ Translation(-50, -40)
-img2 = warp(img2, tform, indices(img2))
+img2 = warp(img2, tform, size(img2))
 img2 = imresize(img2, Int.(trunc.(size(img2) .* 0.7)))
 
 features_1 = Features(fastcorners(img1, 12, 0.35));
