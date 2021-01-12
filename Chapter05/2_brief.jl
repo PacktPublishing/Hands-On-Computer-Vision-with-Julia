@@ -50,8 +50,8 @@ imshow(grid)
 offset_x = median(map(m -> (img_left_width - m[1][2]) + m[2][2], matches))
 offset_x_half = Int(trunc(offset_x / 2))
 img_output = hcat(
-    img_left[:, 1:(img_left_width-diff_on_x_half)],
-    img_right[:, diff_on_x_half:img_right_width]
+    img_left[:, 1:(img_left_width-offset_x_half)],
+    img_right[:, offset_x_half:img_right_width]
 )
 
 imshow(hcat(restrict(img), restrict(img_output)))
